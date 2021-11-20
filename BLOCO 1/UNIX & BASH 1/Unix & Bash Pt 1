@@ -1,0 +1,84 @@
+vicftk@vicftk-Lenovo-IdeaPad-S145-15IWL:~$ cd unix_tests
+vicftk@vicftk-Lenovo-IdeaPad-S145-15IWL:~/unix_tests$ pwd
+/home/vicftk/unix_tests
+vicftk@vicftk-Lenovo-IdeaPad-S145-15IWL:~/unix_tests$ touch trybe.txt 
+vicftk@vicftk-Lenovo-IdeaPad-S145-15IWL:~/unix_tests$ ls
+trybe.txt
+vicftk@vicftk-Lenovo-IdeaPad-S145-15IWL:~/unix_tests$ cp trybe.txt trybe_backup.txt
+vicftk@vicftk-Lenovo-IdeaPad-S145-15IWL:~/unix_tests$ ls
+trybe_backup.txt  trybe.txt
+vicftk@vicftk-Lenovo-IdeaPad-S145-15IWL:~/unix_tests$ mv trybe.txt neotrybe.txt
+vicftk@vicftk-Lenovo-IdeaPad-S145-15IWL:~/unix_tests$ ls
+neotrybe.txt  trybe_backup.txt
+vicftk@vicftk-Lenovo-IdeaPad-S145-15IWL:~/unix_tests$ mkdir backup
+vicftk@vicftk-Lenovo-IdeaPad-S145-15IWL:~/unix_tests$ ls
+backup  neotrybe.txt  trybe_backup.txt
+vicftk@vicftk-Lenovo-IdeaPad-S145-15IWL:~/unix_tests$ cd backup
+vicftk@vicftk-Lenovo-IdeaPad-S145-15IWL:~/unix_tests/backup$ pwd
+/home/vicftk/unix_tests/backup
+vicftk@vicftk-Lenovo-IdeaPad-S145-15IWL:~/unix_tests/backup$ cd ..
+vicftk@vicftk-Lenovo-IdeaPad-S145-15IWL:~/unix_tests$ mv trybe_backup.txt /home/vicftk/unix_tests/backup
+vicftk@vicftk-Lenovo-IdeaPad-S145-15IWL:~/unix_tests$ cd backup
+vicftk@vicftk-Lenovo-IdeaPad-S145-15IWL:~/unix_tests/backup$ ls
+trybe_backup.txt
+vicftk@vicftk-Lenovo-IdeaPad-S145-15IWL:~/unix_tests/backup$ cd ..
+vicftk@vicftk-Lenovo-IdeaPad-S145-15IWL:~/unix_tests$ mkdir backup2 
+vicftk@vicftk-Lenovo-IdeaPad-S145-15IWL:~/unix_tests$ ls
+backup  backup2  neotrybe.txt
+vicftk@vicftk-Lenovo-IdeaPad-S145-15IWL:~/unix_tests$ ^C
+vicftk@vicftk-Lenovo-IdeaPad-S145-15IWL:~/unix_tests$ mv trybe_backup.txt /home/vicftk/unix_tests/backup2
+mv: não foi possível obter estado de 'trybe_backup.txt': Arquivo ou diretório inexistente
+vicftk@vicftk-Lenovo-IdeaPad-S145-15IWL:~/unix_tests$ ls
+backup  backup2  neotrybe.txt
+vicftk@vicftk-Lenovo-IdeaPad-S145-15IWL:~/unix_tests$ cd backup2
+vicftk@vicftk-Lenovo-IdeaPad-S145-15IWL:~/unix_tests/backup2$ ls
+vicftk@vicftk-Lenovo-IdeaPad-S145-15IWL:~/unix_tests/backup2$ cd ..
+vicftk@vicftk-Lenovo-IdeaPad-S145-15IWL:~/unix_tests$ cd backup
+vicftk@vicftk-Lenovo-IdeaPad-S145-15IWL:~/unix_tests/backup$ ls
+trybe_backup.txt
+vicftk@vicftk-Lenovo-IdeaPad-S145-15IWL:~/unix_tests/backup$ mv trybe_backup /home/ vicftk/ unix_tests/ backup2
+mv: o alvo 'backup2' não é um diretório
+vicftk@vicftk-Lenovo-IdeaPad-S145-15IWL:~/unix_tests/backup$ ls
+trybe_backup.txt
+vicftk@vicftk-Lenovo-IdeaPad-S145-15IWL:~/unix_tests/backup$ mv trybe_backup.txt /home/ vicftk/ unix_tests
+mv: o alvo 'unix_tests' não é um diretório
+vicftk@vicftk-Lenovo-IdeaPad-S145-15IWL:~/unix_tests/backup$ cd ..
+vicftk@vicftk-Lenovo-IdeaPad-S145-15IWL:~/unix_tests$ ls
+backup  backup2  neotrybe.txt
+vicftk@vicftk-Lenovo-IdeaPad-S145-15IWL:~/unix_tests$ cd backup
+vicftk@vicftk-Lenovo-IdeaPad-S145-15IWL:~/unix_tests/backup$ ls
+trybe_backup.txt
+vicftk@vicftk-Lenovo-IdeaPad-S145-15IWL:~/unix_tests/backup$ mv trybe_backup.txt /home/vicftk/unix_tests
+vicftk@vicftk-Lenovo-IdeaPad-S145-15IWL:~/unix_tests/backup$ ls
+vicftk@vicftk-Lenovo-IdeaPad-S145-15IWL:~/unix_tests/backup$ cd ..
+vicftk@vicftk-Lenovo-IdeaPad-S145-15IWL:~/unix_tests$ ls
+backup  backup2  neotrybe.txt  trybe_backup.txt
+vicftk@vicftk-Lenovo-IdeaPad-S145-15IWL:~/unix_tests$ mv trybe_backup.txt /home/vicftk/unix_tests/backup2
+vicftk@vicftk-Lenovo-IdeaPad-S145-15IWL:~/unix_tests$ cd backup2
+vicftk@vicftk-Lenovo-IdeaPad-S145-15IWL:~/unix_tests/backup2$ ls
+trybe_backup.txt
+vicftk@vicftk-Lenovo-IdeaPad-S145-15IWL:~/unix_tests/backup2$ cd ..
+vicftk@vicftk-Lenovo-IdeaPad-S145-15IWL:~/unix_tests$ ls
+backup  backup2  neotrybe.txt
+vicftk@vicftk-Lenovo-IdeaPad-S145-15IWL:~/unix_tests$ rm backup
+rm: não foi possível remover 'backup': É um diretório
+vicftk@vicftk-Lenovo-IdeaPad-S145-15IWL:~/unix_tests$ rmdir backup
+vicftk@vicftk-Lenovo-IdeaPad-S145-15IWL:~/unix_tests$ ls
+backup2  neotrybe.txt
+vicftk@vicftk-Lenovo-IdeaPad-S145-15IWL:~/unix_tests$ mv backup2 backup
+vicftk@vicftk-Lenovo-IdeaPad-S145-15IWL:~/unix_tests$ ls
+backup  neotrybe.txt
+vicftk@vicftk-Lenovo-IdeaPad-S145-15IWL:~/unix_tests$ cd backup
+vicftk@vicftk-Lenovo-IdeaPad-S145-15IWL:~/unix_tests/backup$ pwd
+/home/vicftk/unix_tests/backup
+vicftk@vicftk-Lenovo-IdeaPad-S145-15IWL:~/unix_tests/backup$ rm -f neotrybe.txt
+vicftk@vicftk-Lenovo-IdeaPad-S145-15IWL:~/unix_tests/backup$ ls
+trybe_backup.txt
+vicftk@vicftk-Lenovo-IdeaPad-S145-15IWL:~/unix_tests/backup$ rm -f trybe_backup.txt
+vicftk@vicftk-Lenovo-IdeaPad-S145-15IWL:~/unix_tests/backup$ ls
+vicftk@vicftk-Lenovo-IdeaPad-S145-15IWL:~/unix_tests/backup$ cd ..
+vicftk@vicftk-Lenovo-IdeaPad-S145-15IWL:~/unix_tests$ rmdir backup
+vicftk@vicftk-Lenovo-IdeaPad-S145-15IWL:~/unix_tests$ ls
+neotrybe.txt
+vicftk@vicftk-Lenovo-IdeaPad-S145-15IWL:~/unix_tests$ 
+

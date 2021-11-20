@@ -1,0 +1,31 @@
+vicftk@vicftk-Lenovo-IdeaPad-S145-15IWL:~/unix_tests$ cat phrases.txt 
+Faça a pessoa que você gosta se sentir especial ao invés de só mais uma. ...
+A vida e uma caixa preta nunca saberemos o seu real significado.⁠ ...
+não deveríamos temer a morte, mais sim a vida. ...
+Seja estranho. ...
+A vida é um caos aleatório,ordenada pelo tempo. ...
+A verdade, é que dói lembrar dela.
+vicftk@vicftk-Lenovo-IdeaPad-S145-15IWL:~/unix_tests$ wc -m phrases.txt
+305 phrases.txt
+vicftk@vicftk-Lenovo-IdeaPad-S145-15IWL:~/unix_tests$ man wc
+vicftk@vicftk-Lenovo-IdeaPad-S145-15IWL:~/unix_tests$ wc -l phrases.txt
+6 phrases.txt
+vicftk@vicftk-Lenovo-IdeaPad-S145-15IWL:~/unix_tests$ touch empty.tbt 
+vicftk@vicftk-Lenovo-IdeaPad-S145-15IWL:~/unix_tests$ touch empty.pdf
+vicftk@vicftk-Lenovo-IdeaPad-S145-15IWL:~/unix_tests$ ls
+countries.txt  empty.pdf  empty.tbt  phrases.txt
+vicftk@vicftk-Lenovo-IdeaPad-S145-15IWL:~/unix_tests$ ls "*".txt
+ls: não foi possível acessar '*.txt': Arquivo ou diretório inexistente
+vicftk@vicftk-Lenovo-IdeaPad-S145-15IWL:~/unix_tests$ ls '*'.txt
+ls: não foi possível acessar '*.txt': Arquivo ou diretório inexistente
+vicftk@vicftk-Lenovo-IdeaPad-S145-15IWL:~/unix_tests$ ls *.txt
+countries.txt  phrases.txt
+vicftk@vicftk-Lenovo-IdeaPad-S145-15IWL:~/unix_tests$ ls *.txt| ls *.tbt
+empty.tbt
+vicftk@vicftk-Lenovo-IdeaPad-S145-15IWL:~/unix_tests$ ls *.txt & ls *.tbt
+[4] 7434
+countries.txt  phrases.txt
+empty.tbt
+[4]   Concluído              ls --color=auto *.txt
+vicftk@vicftk-Lenovo-IdeaPad-S145-15IWL:~/unix_tests$ man ls
+

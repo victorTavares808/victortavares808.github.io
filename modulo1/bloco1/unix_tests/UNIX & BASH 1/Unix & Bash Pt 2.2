@@ -1,0 +1,42 @@
+vicftk@vicftk-Lenovo-IdeaPad-S145-15IWL:~/unix_tests$ pwd
+/home/vicftk/unix_tests
+vicftk@vicftk-Lenovo-IdeaPad-S145-15IWL:~/unix_tests$ ls -l
+total 16
+-rw-rw-rw- 1 vicftk vicftk 138 nov 13 12:30 bunch_of_things.txt
+-rw-rw-r-- 1 vicftk vicftk   0 nov 13 12:26 countries.txt
+-rw-rw-r-- 1 vicftk vicftk 138 nov 13 12:19 phrases2.txt
+-rw-rw-r-- 1 vicftk vicftk  49 nov 13 11:38 skills2.txt
+-rw-rw-r-- 1 vicftk vicftk  12 nov 13 11:54 top_skills.txt
+vicftk@vicftk-Lenovo-IdeaPad-S145-15IWL:~/unix_tests$ chmod u=rw bunch_of_things.txt
+vicftk@vicftk-Lenovo-IdeaPad-S145-15IWL:~/unix_tests$ ls -l
+total 16
+-rw-rw-rw- 1 vicftk vicftk 138 nov 13 12:30 bunch_of_things.txt
+-rw-rw-r-- 1 vicftk vicftk   0 nov 13 12:26 countries.txt
+-rw-rw-r-- 1 vicftk vicftk 138 nov 13 12:19 phrases2.txt
+-rw-rw-r-- 1 vicftk vicftk  49 nov 13 11:38 skills2.txt
+-rw-rw-r-- 1 vicftk vicftk  12 nov 13 11:54 top_skills.txt
+vicftk@vicftk-Lenovo-IdeaPad-S145-15IWL:~/unix_tests$ chmod u-w bunch_of_things.txt
+vicftk@vicftk-Lenovo-IdeaPad-S145-15IWL:~/unix_tests$ ls -l
+total 16
+-r--rw-rw- 1 vicftk vicftk 138 nov 13 12:30 bunch_of_things.txt
+-rw-rw-r-- 1 vicftk vicftk   0 nov 13 12:26 countries.txt
+-rw-rw-r-- 1 vicftk vicftk 138 nov 13 12:19 phrases2.txt
+-rw-rw-r-- 1 vicftk vicftk  49 nov 13 11:38 skills2.txt
+-rw-rw-r-- 1 vicftk vicftk  12 nov 13 11:54 top_skills.txt
+vicftk@vicftk-Lenovo-IdeaPad-S145-15IWL:~/unix_tests$ chmod go-w bunch_of_things.txt
+vicftk@vicftk-Lenovo-IdeaPad-S145-15IWL:~/unix_tests$ ls -l
+total 16
+-r--r--r-- 1 vicftk vicftk 138 nov 13 12:30 bunch_of_things.txt
+-rw-rw-r-- 1 vicftk vicftk   0 nov 13 12:26 countries.txt
+-rw-rw-r-- 1 vicftk vicftk 138 nov 13 12:19 phrases2.txt
+-rw-rw-r-- 1 vicftk vicftk  49 nov 13 11:38 skills2.txt
+-rw-rw-r-- 1 vicftk vicftk  12 nov 13 11:54 top_skills.txt
+vicftk@vicftk-Lenovo-IdeaPad-S145-15IWL:~/unix_tests$ chmod 644 bunch_of_things.txt
+vicftk@vicftk-Lenovo-IdeaPad-S145-15IWL:~/unix_tests$ ls -l
+total 16
+-rw-r--r-- 1 vicftk vicftk 138 nov 13 12:30 bunch_of_things.txt
+-rw-rw-r-- 1 vicftk vicftk   0 nov 13 12:26 countries.txt
+-rw-rw-r-- 1 vicftk vicftk 138 nov 13 12:19 phrases2.txt
+-rw-rw-r-- 1 vicftk vicftk  49 nov 13 11:38 skills2.txt
+-rw-rw-r-- 1 vicftk vicftk  12 nov 13 11:54 top_skills.txt
+
