@@ -1,37 +1,51 @@
-## Welcome to GitHub Pages
-
-You can use the [editor on GitHub](https://github.com/victorTavares808/novo-repositorio-modulo1-bloco3/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/victorTavares808/novo-repositorio-modulo1-bloco3/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <title>HTML</title>
+  </head>
+  <body>
+    <h1><strong>Victor Danilo Rebouças Tavares</strong></h1>
+    <img src = "WhatsApp Image 2021-11-22 at 11.12.01.jpeg" width="200px">
+    <br>
+    <p><h2>Índice</h2></p>
+    <ul>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#skilli">Skills Interpessoais</a></li>
+      <li><a href="#skillt">Skills Técnicas</a></li>
+      <li><a href="#blogrrr">Blogs Recomendados</a></li>
+    </ul>
+    <br>
+    <p><h2 id="about">About Me</h2></p>
+    <ul>
+    <li>33 Anos</li>
+    <li>Paulistano cinza legítimo, colorido pelas nuances dos lugares por onde andei.</li>
+    <li>Ex-Marinheiro Mercante.</li>
+    <li><strong>Apaixonado</strong> por tecnologia, programação, hacking, música ruim, cinema, café e games.</li>
+    </ul>
+    <p> <h2 id="skilli">Skills Interpessoais</h2></p>
+    <ul>
+        <li>Determinação</li>
+        <li><strong>Alta Adaptabilidade</strong></li>
+        <li>Conscienciosidade</li>
+        <li>Oratória</li>
+    </ul> 
+    <p><h2 id="skillt">Skills Técnicas</h2></p>
+    <ul>
+    <li>Git</li>
+    <li>GitHub</li>
+    <li><strong>HTML</strong></li>
+    <li>CSS</li>
+    </ul>
+    
+  <p><h2 id="blogrrr">Blogs Recomendados</h2></p>
+  <ul>
+    <a href="https://diolinux.com.br/" target="_blank">Diolinux</a>
+    <br>
+    <a href="https://www.hackbrazil.com/" target="_blank">HackBrazil</a>
+    <br>
+    <a href="https://imasters.com.br/noticias/" target="_blank">IMasters</a>
+    <br>
+  </ul>
+  </body>
+</html>
